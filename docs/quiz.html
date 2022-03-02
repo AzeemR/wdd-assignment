@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Welcome to the Sports Quiz!</h1>
-    <button id="quizStart" onclick="setTimeout(myFunction, 3000)">Start</button>
-    <div>
+    <button id="quizStart" onclick="funcQuizStart();setTimeout(funcQuizResult, 60000);">Start</button>
+    <div id="quizArea" style="display: none;">
         <form>
             <ol>
                 <!-- First Question -->
@@ -113,13 +114,22 @@
                     </ul>
                 </li>
             </ol>
+            <button id="quizDone" onclick="funcQuizResult()">Submit Answers</button>
         </form>
     </div>
 
 
     <script>
-    function myFunction() {
-      alert('Hello');
+
+    function funcQuizStart() {
+      var hid = document.getElementById("quizStart");
+      hid.style.display = "none";
+      var show = document.getElementById("quizArea");
+      show.style.display = "block";
+    }
+    function funcQuizResult() {
+      var hid = document.getElementById("quizStart");
+      hid.style.display = "none";
     }
     </script>
 </body>
