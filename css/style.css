@@ -1,1 +1,47 @@
 /* Main Colours */
+:root {
+    --mainColour: #e1e1e1;
+    --secondaryColour: #e73725;
+    --outlineColour: #000;
+}
+
+body {
+    background-color: var(--mainColour);
+}
+
+button {
+    background-color: var(--secondaryColour);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.quizBody {
+    width: 100%;
+}
+
+.quizH1 {
+    text-align: center;
+}
+
+.quiStart {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizQuestions {
+    display: none;
+}
