@@ -7,16 +7,33 @@
 
 body {
     background-color: var(--mainColour);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* HOMEPAGE */
 
 /* Navbar */
+.nav-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
+    overflow: hidden;
+    background-color: #333;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 1200px;
+    /* top: 0;
+    left: 83px; */
+    z-index: 9999;
+}
+
+.navbar img {
+    padding: 5px 20px;
+
 }
 .nav {
     overflow: hidden;
@@ -54,7 +71,8 @@ img {vertical-align: middle;}
 
 /* Main Content */
 .main {
-    margin-top: 50px;
+    position:relative;
+    top: 60px;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -118,6 +136,31 @@ img {vertical-align: middle;}
     to {opacity: 1}
 }
 
+/* CATEGORY TITLE */
+.cat-title {
+    width: 400px;
+    height: 50px;
+    background-color: #e73725;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    border: 0;
+    border-radius: 20px;
+}
+
+.cat-title h1 {
+    padding: 2px;
+}
+
+.cat-title h3 {
+    padding: 12px;
+}
+
+.cat-title-small {
+    padding: 12px;
+    width: 300px;
+}
+
 /* CATEGORY GENDER */
 .gender{
     overflow: hidden;
@@ -128,6 +171,67 @@ img {vertical-align: middle;}
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+.gender td {
+    max-height: max-content;
+}
+
+/* CAMPING BANNER */
+.camping {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+/* TEAM SPORTS */
+.team-sports {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.team-single{
+    padding: 10px;
+}
+
+.team-single img{
+    width: 580px;
+}
+
+.team-other{
+    display: flex;
+}
+
+.team-other img {
+    width: 290px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+/* ALL CATEGORIES */
+.all-categories {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.all-categories h3{
+    margin: 10px 30px;
+}
+
+.all-categories td {
+    text-align: center;
+}
+/* 
+.all-categories td:hover {
+    background-color: #fff;
+} */
 
 /* QUIZ */
 button {
@@ -141,6 +245,8 @@ button {
     font-size: 20px;
     transition: transform .2s;
 }
+
+
 
 button:hover {
     transform: scale(1.2);
