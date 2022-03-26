@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link rel="stylesheet" href="../css/allproductsstyle.css">
+    <script src="js/allproducts.js"></script>
+ </head>
+ <body>
+    <div class="container">
+        <h1>All Products</h1>
+        <!--product one-->  
+        <div class="products">
+            <div class="product">
+                <img class="proimg" src="../img/prod-01.jpg" alt="wear">
+                <div class="description">
+                    <div class="details">
+                        <h3 id="prodTitle1">NITRO TECH protein powder</h3>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice1">LKR</label>
+                        <span id="prodPrice1">3500.00</span>
+                    </div>
+                    <label class="proqt" for="qty1">Quantity:</label>
+                    <input id="qty1" type="text">
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product 1 end -->
+
+
+        <!--product two-->
+        <div class="products">
+            <div class="product">
+                <img class="proimg" src="../img/prod-01.jpg" alt="wear">
+                <div class="description">
+                    <div class="details">
+                        <h3 id="prodTitle2">Swim cap with goggles</h3>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice2">LKR</label>
+                        <span id="prodPrice2">1500.00</span>
+                    </div>
+                    <label class="proqt" for="qty2">Quantity:</label>
+                    <input id="qty2" type="text">
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('2')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product 2 end -->
+
+        <button onclick="calc()">Submit</button>
+
+        <div id="invoice"></div>
+    </div>
+
+    <script>
+
+        let arr1 = [];
+        let arr2 = [];
+        let arr3 = [];
+
+        function prodDet(num) {
+            let prodTitle = "prodTitle" + num;
+            let prodPrice = "prodPrice" + num;
+            let qty = "qty" + num;
+            let x =  document.getElementById(prodTitle).textContent;
+            let y =  document.getElementById(prodPrice).textContent;
+            let z =  document.getElementById(qty).value;
+            let lenArr = arr1.length;
+            arr1[lenArr] = x;
+            arr2[lenArr] = y;
+            arr3[lenArr] = z;
+
+        }
+
+        function calc() {
+            tot = 0;
+            for (let i = 0; i < arr2.length; i++) {
+                val = Number(arr2[i]);
+                qty = Number(arr3[i]);
+                price = val*qty;
+                tot += price;
+                
+            }
+
+            document.getElementById("invoice").innerHTML = "<h2>Invoice</h2><div>Total : " + tot;
+
+        }
+    </script>
+
+ </body>
+</html>  

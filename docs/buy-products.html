@@ -9,18 +9,25 @@
         <form > 
                 
                  
-               <input type='text' placeholder="Enter First Name"><br>
+               <input type='text' id="name" placeholder="Enter First Name"><br>
                <input type='text' placeholder="Enter Last Name" ><br>
                <input type='text' placeholder="Enter Address" ><br>
                <input type='email' placeholder="Enter email address" ><br>
                <input type='tel' placeholder="Enter contact number" ><br>
                
             <div>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn" onclick="go()">Submit</button>
                 <button type="reset"  class="btn">Reset</button>
             </div>
-       
         </form>
+
+        <script>
+            function go() {
+                let name = document.getElementById("name.value");
+                window.open("products-test.html")
+            }
+            
+        </script>
     </body>
 
 </html>
