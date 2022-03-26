@@ -8,13 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="quizBody">
-        <div class="quizStart">
-            <h1>Welcome to the Sports Quiz!</h1>
-            <button id="startQuiz" onclick="funcQuizStart();setTimeout(funcQuizResult, 60000);">Start</button>
+    <div id="box">
+        <div id="marks"></div>
+        <button class="close" onclick="pop()">Close</button>
+    </div>
+    <div class="quizArea">
+        <div id="title1">
+        <h1>Welcome to the Sports Quiz!</h1>
         </div>
-    
-        <div id="quizArea" style="display: none">
+
+        <div id="title2" style="display: none;">
+            <h1>Let's check your knowledge!</h1>
             <form>
                 <ol >
                     <!-- First Question -->
@@ -118,37 +122,12 @@
                         </ul>
                     </li>
                 </ol>
-                <button id="quizDone" onclick="funcQuizResult()">Submit Answers</button>
-                <div id="results"></div>
             </form>
         </div>
+        <button id="btn" onclick="toggleDisplay();setTimeout(funcQuizResult, 60000);">Start Quiz</button>
+        <button id="btn2" style="display: none;" onclick="funcQuizResult()">Submit Answers</button>
     </div>
-
-    
-    <script>
-
-    function funcQuizStart() {
-        var hid = document.getElementById("startQuiz");
-        hid.style.display = "none";
-        // document.getElementsByClassName("quizStart").style.height = "100px;"
-
-        var show = document.getElementById("quizArea");
-        show.style.display = "block";
-    }
-    function funcQuizResult() {
-        let i = 1;
-        let tot = 0;
-        while (i <11) {
-            let ques = "q" + i;
-            if (document.getElementById(ques).checked) {
-                tot += 2;
-            } else {
-                tot -= 1;
-            }
-            i += 1;
-        }
-        window.alert(tot);
-    }
+    <script src="../js/script.js">
     </script>
 </body>
 </html>
