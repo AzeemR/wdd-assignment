@@ -29,7 +29,7 @@ h1{
     border: 1px solid rgb(207, 203, 203);
     padding: 0.7%;
     background-color: beige;
-    width:fit-content;
+    width:max;
 }
 .description{
     text-align: center;

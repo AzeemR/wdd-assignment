@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All products</title>
     <link rel="stylesheet" href="../css/allproductsstyle.css">
-    <script src="js/allproducts.js"></script>
+    <link rel="stylesheet" href="../css/buyproductstyle.css">
+    
  </head>
  <body>
+   
     <div class="container">
         <h1>All Products</h1>
         <!--product one-->  
@@ -199,7 +201,7 @@
                         <span id="prodPrice9">3000.00</span>
                     </div>
                     <label class="proqt" for="qty9">Quantity:</label>
-                    <input id="qty9" type="text">
+                    <input  id="qty9" type="text">
                     <div>
                         <button class="btncart" style="margin-top: 15px;" onclick="prodDet('9')">Add to Cart</button>
                     </div>
@@ -229,6 +231,72 @@
             </div>
         </div>
         <!-- Product 10 end -->
+
+    <h1 style="color: rgb(54, 34, 34);"> Personal Details</h1>
+    <form > 
+            
+             
+           <input type='text' id="name" placeholder="Enter First Name"><br>
+           <input type='text' placeholder="Enter Last Name" ><br>
+           <input type='text' placeholder="Enter Address" ><br>
+           <input type='email' placeholder="Enter email address" ><br>
+           <input type='tel' placeholder="Enter contact number" ><br>
+           
+        <div>
+            <button type="submit" class="btn" onclick="go()">Submit</button>
+            <button type="reset"  class="btn">Reset</button>
+        </div>
+    </form>
+
+    
+        
+    <button onclick="calc()">Submit</button>
+
+        <div id="invoice"></div>
+            </div>
+
+     <script>
+
+        let arr1 = [];
+        let arr2 = [];
+        let arr3 = [];
+
+        function prodDet(num) {
+            let prodTitle = "prodTitle" + num;
+            let prodPrice = "prodPrice" + num;
+            let qty = "qty" + num;
+            let x =  document.getElementById(prodTitle).textContent;
+            let y =  document.getElementById(prodPrice).textContent;
+            let z =  document.getElementById(qty).value;
+            let lenArr = arr1.length;
+            arr1[lenArr] = x;
+            arr2[lenArr] = y;
+            arr3[lenArr] = z;
+
+        }
+    
+        function go() {
+            let name = document.getElementById("name.value");
+            window.open("allproducts.html")
+        }
+        
+    </script>
+    <script>
+     function calc() {
+        tot = 0;
+        for (let i = 0; i < arr2.length; i++) {
+            val = Number(arr2[i]);
+            qty = Number(arr3[i]);
+            price = val*qty;
+            tot += price;
+            
+        }
+
+        let prevHTML = document.getElementById("invoice").innerHTML
+        document.getElementById("invoice").innerHTML = prevHTML + "<h2>Invoice</h2><div>Total : " + tot;
+
+    }
+    </script> 
 
 
 
