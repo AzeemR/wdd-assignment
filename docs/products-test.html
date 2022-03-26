@@ -91,7 +91,8 @@
                 
             }
 
-            document.getElementById("invoice").innerHTML = "<h2>Invoice</h2><div>Total : " + tot;
+            let prevHTML = document.getElementById("invoice").innerHTML
+            document.getElementById("invoice").innerHTML = prevHTML + "<h2>Invoice</h2><div>Total : " + tot;
 
         }
     </script>
