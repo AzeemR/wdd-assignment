@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title1">
+      <h1>Welcome to the Sports Quiz!</h1>
+    </div>
+
+    <div id="title2" style="display: none;">
+        <h1>Let's check your knowledge!</h1>
+    </div>
+
+    <button id="btn" onclick="toggleDisplay()">Start Quiz</button>
+    <button id="btn2" style="display: none;" onclick="toggleDisplay()">Submit Answers</button>
+
+    <script>
+        function toggleDisplay() {
+            var x = document.getElementById("title1");
+            var y = document.getElementById("title2");
+            var z = document.getElementById("btn");
+            var u = document.getElementById("btn2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+
+                z.style.display = "block";
+                u.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+                
+                u.style.display = "block";
+                z.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
