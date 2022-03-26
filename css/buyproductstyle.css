@@ -1,24 +1,7 @@
-input{
-    color: rgb(10, 10, 10);
-    border:none ;
-    border-bottom: 5px solid red;
-    outline: none;
-    opacity:0.9;
-    width: 50%;
-    line-height: 400%;
-}
-input:hover{
-    background-color: rgb(211, 160, 160);
-}
+
 body{
     
     height: 100%;
-   
-    /* Center and scale the image nicely */
-    background-position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
 
 }
 h1 {

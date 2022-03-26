@@ -1,77 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Buy products</title>
-        <link rel="stylesheet" href="../css/buyproductstyle.css">
-        <script src="allproducts.js"></script>
-    </head>
-    <body>
-        <h1 style="color: rgb(196, 135, 135);"> Personal Details</h1>
-        <form > 
-                
-                 
-               <input class="per" type='text' id="fname" placeholder="Enter First Name"><br>
-               <input class="per" type='text' id="lname"placeholder="Enter Last Name" ><br>
-               <input class="per" type='text' id="address" placeholder="Enter Address" ><br>
-               <input class="per" type='email' id="email"placeholder="Enter email address" ><br>
-               <input class="per" type='tel'id="cntact" placeholder="Enter contact number" ><br>
-               
-            <div>
-                <button type="submit" class="btn" onclick="validation()">Submit</button>
-                <button type="reset"  class="btn">Reset</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/allproducts.js"></script>
+ </head>
+ <body>
+    <div class="container">
+        <h1>All Products</h1>
+        <div class="products">
+        <!--product one-->  
+            <div class="product">
+                <img class="proimg" src="../img/prod-01.jpg" alt="wear">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle1">NITROTECH protein powder</p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice1">LKR</label>
+                        <span id="prodPrice1">3500.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty1">Quantity:</label>
+                        <input id="qty1" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('1')">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-        </form>
-        <script>
+        <!-- Product 1 end -->
+
+
+        <!--product two-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-02.jpg" alt="wear">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle2">Swim cap with goggles</p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice2">LKR</label>
+                        <span id="prodPrice2">1500.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty2">Quantity:</label>
+                        <input id="qty2" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('2')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 2 end -->
+
+        <!--product three-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-03.jpg" alt="shoes">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle3">Under Armour Shoes </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice3">LKR</label>
+                        <span id="prodPrice3">6500.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty3">Quantity:</label>
+                        <input id="qty3" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('3')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 3 end -->
+
+        
+        <!--product four-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-04.jpg" alt="shoes">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle4">Black Nike Shoes </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice4">LKR</label>
+                        <span id="prodPrice4">7800.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty4">Quantity:</label>
+                        <input id="qty4" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('4')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 4 end -->
+
+        <!--product five-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-05.jpg" alt="bottom">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle5">Mens Adidas Track bottom </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice5">LKR</label>
+                        <span id="prodPrice5">2500.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty5">Quantity:</label>
+                        <input id="qty5" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('5')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 5 end -->
+
+          <!--product six-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-06.jpg" alt="jacket">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle6">Mens Adidas Tracksuit Jacket </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice6">LKR</label>
+                        <span id="prodPrice6">1800.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty6">Quantity:</label>
+                        <input id="qty6" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('6')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 6 end -->
+
+         <!--product seven-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-07.jpg" alt="football">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle7">Adidas Team Sala Football </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice7">LKR</label>
+                        <span id="prodPrice7">5500.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty7">Quantity:</label>
+                        <input id="qty7" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('7')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 7 end -->
+
+         <!--product eight-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-08.jpg" alt="soccerball">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle8">Adidas Messi Soccer ball </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice8">LKR</label>
+                        <span id="prodPrice8">6000.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty8">Quantity:</label>
+                        <input id="qty8" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('8')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 8 end -->
+
+        <!--product nine-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-09.jpg" alt="soccerball">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle9">Goal keeper gloves </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice9">LKR</label>
+                        <span id="prodPrice9">3000.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty9">Quantity:</label>
+                        <input id="qty9" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('9')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 9 end -->
+
+         <!--product ten-->
+            <div class="product">
+                <img class="proimg" src="../img/prod-10.jpg" alt="soccerball">
+                <div class="description">
+                    <div class="details">
+                        <p id="prodTitle10">Mens Anti Slip socks </p>
+                    </div>
+                    <div class="proprice">
+                        <label for="prodPrice10">LKR</label>
+                        <span id="prodPrice10">950.00</span>
+                    </div>
+                    <div class="proqty">
+                        <label class="proqt" for="qty10">Quantity:</label>
+                        <input id="qty10" type="text">
+                    </div>
+                    <div>
+                        <button class="btncart" style="margin-top: 15px;" onclick="prodDet('10')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 10 end -->
+        </div>
+
+        <!-- Personal details -->
+        <div class="personal">
+            <h1 style="color: rgb(54, 34, 34);"> Personal Details</h1>
+            <form>
+                <input class="per" type='text' id="fname" placeholder="Enter First Name"><br>
+                <input class="per" type='text' id="lname"placeholder="Enter Last Name" ><br>
+                <input class="per" type='text' id="address" placeholder="Enter Address" ><br>
+                <input class="per" type='email' id="email"placeholder="Enter email address" ><br>
+                <input class="per" type='tel'id="cntact" placeholder="Enter contact number" ><br>
+                <!-- <div>
+                    <button type="reset"  class="btn">Reset</button>
+                </div> -->
+            </form>
+        </div>
+        <div class="submit">
+            <button onclick="validation()">Submit</button>
+        </div>
+
+        <div id="invoice"></div>
+    </div>
+
+    <script>
+
+        let arr1 = [];
+        let arr2 = [];
+        let arr3 = [];
+
+        function prodDet(num) {
+            let prodTitle = "prodTitle" + num;
+            let prodPrice = "prodPrice" + num;
+            let qty = "qty" + num;
+            let x =  document.getElementById(prodTitle).textContent;
+            let y =  document.getElementById(prodPrice).textContent;
+            let z =  document.getElementById(qty).value;
+            let lenArr = arr1.length;
+            arr1[lenArr] = x;
+            arr2[lenArr] = y;
+            arr3[lenArr] = z;
+
+        }
+
+        function calc() {
+            tot = 0;
+            for (let i = 0; i < arr2.length; i++) {
+                val = Number(arr2[i]);
+                qty = Number(arr3[i]);
+                price = val*qty;
+                tot += price;
+                
+            }
+            return tot;
+        }
+
         function validation(){
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var cntact = document.getElementById("cntact").value;
+            var address = document.getElementById("address").value;
+
+            if(fname=="null" || fname=="" ){
+            alert("Please Provide Your First Name!");
+            }
+
+            else if(lname=="null" || lname==""){
+            alert("Please Provide Your Last Name!");
+            }
+
+            else if(email=="null" || email==""){
+            alert("Please Provide the email address!"); 
+            }
+
+            else if(email.length < 8 || email.indexOf("@") == -1 || email.indexOf(".") == -1){
+                alert("You have entered an invalid email address");
+            }
+
+            else if(cntact=="null" || cntact==""){
+            alert("Please Provide a phone number!");
+            }
+
+            else if(cntact.length != 10){
+                alert("You have entered an invalid phone number");
+            }
+
+            else if(address=="null" || address==""){
+                alert("Please Provide your address!");
+            }
+
+            else{
+                submit();
+            }
+        }
+
+        function submit() {
+            var tot = calc()
 
             var fname = document.getElementById("fname").value;
             var lname = document.getElementById("lname").value;
             var email = document.getElementById("email").value;
             var cntact = document.getElementById("cntact").value;
             var address = document.getElementById("address").value;
-           
-            
-           
-            if(fname=="null" || fname=="" ){
-              alert("Please Provide Your First Name!");
-            }
-            
-            else if(lname=="null" || lname==""){
-              alert("Please Provide Your Last Name!");
-            }
-            else if(email=="null" || email==""){
-              alert("Please Provide the email address!"); 
-            }
-            else if(email.length < 8 || email.indexOf("@") == -1 || email.indexOf(".") == -1){
-                alert("You have entered an invalid email address");
-            }
-            else if(cntact=="null" || cntact==""){
-              alert("Please Provide a phone number!");
-            }
-            
-            else if(cntact.length != 10){
-                 alert("You have entered an invalid phone number");
-            }
-            else if(address=="null" || address==""){
-                alert("Please Provide your address!");
-            }
-            else if(address.indexOf(",") == -1 || address.length < 7){
-                alert("You have entered an invalid address");
-            } 
-           
-            else{
-            alert("Dear " +fname+lname+ ", Your order has been requested successfully!! You will recieve an confirmation email to " +email+ " shortly.\n\n\n Thank You for shopping with us!!" );
-            }
-          }
-         </script>
 
-        <script>
-            function go() {
-                let name = document.getElementById("name.value");
-                window.open("products-test.html")
-            }
-            
-        </script>
-    </body>
+            document.getElementById("invoice").innerHTML = "<h2>Invoice</h2><hr><p>Name: " + fname + " " + lname + "<br>E-mail: " + email + "<br>Phone No: " + cntact + "</p><hr>";
 
-</html>
+            for (let i = 0; i < arr1.length; i++) {
+                let prevHTML = document.getElementById("invoice").innerHTML
+                document.getElementById("invoice").innerHTML = prevHTML + "<p>Product: " + arr1[i] + "<br>Price: Rs." + arr2[i] + "<br>Quantity: " + arr3[i] + "</p>";
+                
+            }
+
+            let prevHTML = document.getElementById("invoice").innerHTML
+            document.getElementById("invoice").innerHTML = prevHTML + "<hr><div>Total : Rs." + tot + "</div><hr>";
+
+        }
+    </script>
+
+ </body>
+</html>  

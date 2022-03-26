@@ -246,10 +246,12 @@ button {
     transition: transform .2s;
 }
 
-
-
 button:hover {
     transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(1.0);
 }
 
 .quizArea {
@@ -297,4 +299,157 @@ button:hover {
     background: var(--secondaryColour);
     display: inline-block;
     border-radius: 1px solid #000;
+}
+
+/* BUY PRODUCTS */
+
+.container {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1000px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+.btncart {
+    background-color: black;
+    color: beige;
+    width: 125px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.btncart:hover {
+    background-color: rgb(255, 173, 173);
+}
+
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.product{
+    border: 1px solid rgb(207, 203, 203);
+    padding: 0.7%;
+    background-color: beige;
+    width: 300px;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.proimg {
+    width: 250px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.description{
+    text-align: center;
+
+}
+
+.details > p{
+    color: var(--secondaryColour);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.proprice {
+    margin-bottom: 5px;
+}
+
+.proprice > label{
+    font-weight: bold;
+}
+
+.proqty {
+    margin-bottom: 5px;
+}
+
+.proqty > label {
+    font-weight: bold;
+}
+
+.proqty > input {
+    width: 75px;
+    height: 20px;
+    border: -5px;
+    border-radius: 5px;
+}
+
+.personal {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.personal > form {
+    margin: auto;
+}
+
+.personal > form > input {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+
+.per{
+    color: rgb(10, 10, 10);
+    border:none ;
+    border-bottom: 1px solid red;
+    outline: none;
+    opacity:0.9;
+    width: 50%;
+    line-height: 400%;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+.per:hover{
+    border-radius: 15px;
+    background-color: rgb(245, 195, 195);
+    border: none;
+}
+
+.submit {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+#invoice {
+    width: 1000px;
+    margin-top: 20px;
+}
+
+#invoice hr{
+    width: 500px;
+    align-content: center;
+}
+
+#invoice h2{
+    text-align: center;
+}
+
+#invoice p{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#invoice div{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
 }
