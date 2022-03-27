@@ -9,7 +9,7 @@ body {
     background-color: var(--mainColour);
 }
 
-/* HOMEPAGE */
+/* ######### HOMEPAGE ######### */
 
 /* Navbar */
 .nav-section {
@@ -227,12 +227,51 @@ img {vertical-align: middle;}
 .all-categories td {
     text-align: center;
 }
+
 /* 
 .all-categories td:hover {
     background-color: #fff;
 } */
 
-/* QUIZ */
+/* FOOTER */
+.footer {
+    max-width: 1200px;
+    background-color: #ffceb2;
+    margin: auto;
+}
+
+.line-1 {
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line-2 > a {
+    color: #00f;
+    text-decoration: none;
+}
+
+.line-2 > a:hover {
+    padding: 5px;
+    background-color: var(--secondaryColour);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.line-2 > a:visited {
+    color: #00f;
+}
+
+
+
+/* ######### QUIZ ######### */
 button {
     background-color: var(--secondaryColour);
     color: #fff;
@@ -301,7 +340,7 @@ button:active {
     border-radius: 1px solid #000;
 }
 
-/* BUY PRODUCTS */
+/* ######### BUY PRODUCTS ######### */
 
 .container {
    margin: auto;

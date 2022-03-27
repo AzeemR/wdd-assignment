@@ -81,7 +81,6 @@ function pop(tot,popup) {
         popup = true
 
     } else {
-        // document.getElementById("box").style.display = "none";
         location.replace("../docs/home.html")
         popup = false
     }
