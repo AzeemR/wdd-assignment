@@ -28,7 +28,7 @@ ul{
 
 
 body{
-    
+
     margin: auto;
     background-color:lightgrey;
     background-image:url("../img/logo.png");
@@ -43,26 +43,11 @@ body{
 }
 
   
-  
-  .devloper{
-   
-    position:relative;
-    width:200px;
-    align-items: center;
-    background-color:#ffe6e6;
-    padding: 13px;
-  }
-  
-.devloper label{
-    font: size 30px;
-    
-  }
-  
-  .devloper span{
-    font-size:15px;
-  }
-  
-  .devloper h5{
-    color: #4d2828;
-    
-  }
+.index-footer {
+  position: fixed;
+  width: 80vw;
+  height: 8vh;
+  margin: auto;
+  top: 92vh;
+  left: 10vw;
+}
