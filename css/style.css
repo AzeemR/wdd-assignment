@@ -636,6 +636,15 @@ button:active {
     margin: auto;
     display: flex;
     flex-direction: column;
+    transition: transform .2s;
+}
+
+.devWrap:hover {
+    transform: scale(1.1);
+}
+
+.devWrap:active {
+    transform: scale(0.9);
 }
 
 .devWrap > img {
