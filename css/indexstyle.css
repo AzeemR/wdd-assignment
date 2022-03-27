@@ -39,7 +39,9 @@ body{
     /* Center and scale the image nicely */
     background-position:relative;
     background-repeat: no-repeat;
-    background: size 50px;
+    background-position-x: 5vw;
+    background-position-y: 12vh;
+    background-size: 400px;
 }
 
   
