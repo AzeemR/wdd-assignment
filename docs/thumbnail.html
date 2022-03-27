@@ -10,6 +10,12 @@
 			var bgcolor=x.options[x.selectedIndex].value;
 			document.body.style.backgroundColor=bgcolor;
 		}
+		function colortx()
+		{
+			var x=document.getElementById("sid");
+			var txcolor=x.options[x.selectedIndex].value;
+			document.body.style.textColor=txcolor;
+		}
 	</script>
 	<style>
 		.blue {background-color: blue;}
@@ -25,7 +31,7 @@
 		<!-- Change text color -->
 		<div>
 			<p class="PT">Page Text Color</p>
-			<select>
+			<select id="sid">
 				<option value="selected hidden"> --Select Color-- </option>
 				<option value="blue">blue</option>
 				<option value="red">red</option>
