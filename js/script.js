@@ -109,3 +109,19 @@ function pop(tot,popup) {
         popup = false
     }
 }
+
+// THUMBNAILS
+
+function colorbg()
+{
+  var x=document.getElementById("selectid");
+  var bgcolor=x.options[x.selectedIndex].value;
+  document.iframe_a.document.body.style.backgroundColor=bgcolor;
+}
+function colortx()
+{
+  var x=document.getElementById("sid");
+  var txcolor=x.options[x.selectedIndex].value;
+  document.iframe_a.document.body.style.color = txcolor
+  // v.style.color=txcolor;
+} 
