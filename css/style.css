@@ -454,3 +454,41 @@ button:active {
     margin: auto;
     margin-bottom: 10px;
 }
+/*developer*/
+/*.footer {
+    grid-area: footer;
+    background-color: #0d0e0de6;
+    padding: 10px;
+    text-align: center;
+    height:60px;
+  }
+  
+  
+  .devloper{
+    top: 227%;
+    position:relative;
+    right: 0;
+    line-height: 0.6;
+    background-color:#b1acac;
+    padding: 13px;
+  }
+  
+  .devloper label{
+    font-size:13px;
+    line-height:0.8;
+  }
+  
+  .devloper span{
+    font-size:15px;
+  }
+  
+  .devloper h4{
+    color: #292929;
+    line-height: 0.9;
+  }
+  
+a{
+    text-decoration: none;
+    color: #cebdbd;
+  }*/
+  

@@ -25,13 +25,44 @@ ul{
     opacity: 0.7;
    
 }
+
+
 body{
+    
+    margin: auto;
     background-color:lightgrey;
     background-image:url("../img/logo.png");
     height: 50%;
+    padding-top: 60px;
+    padding-left: 60px;
    
     /* Center and scale the image nicely */
     background-position:relative;
     background-repeat: no-repeat;
     background: size 50px;
 }
+
+  
+  
+  .devloper{
+   
+    position:relative;
+    width:200px;
+    align-items: center;
+    background-color:#ffe6e6;
+    padding: 13px;
+  }
+  
+.devloper label{
+    font: size 30px;
+    
+  }
+  
+  .devloper span{
+    font-size:15px;
+  }
+  
+  .devloper h5{
+    color: #4d2828;
+    
+  }
