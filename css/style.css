@@ -13,7 +13,7 @@ body {
 
 /* Navbar */
 .nav-section {
-    width: 80vw;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ body {
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    width: 80vw;
+    width: 1200px;
     /* top: 0;
     left: 83px; */
     z-index: 9999;
@@ -36,7 +36,7 @@ body {
 }
 .nav {
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     background-color: #333;
     margin: auto;
     display: flex;
@@ -75,7 +75,7 @@ img {vertical-align: middle;}
 }
 /* Slideshow container */
 .slideshow-container {
-    width: 80vw;
+    width: 1200px;
     position: relative;
     margin: auto;
 
@@ -163,7 +163,7 @@ img {vertical-align: middle;}
 /* CATEGORY GENDER */
 .gender{
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -179,7 +179,7 @@ img {vertical-align: middle;}
 /* CAMPING BANNER */
 .camping {
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
     margin-top: 75px;
 }
@@ -189,7 +189,7 @@ img {vertical-align: middle;}
     background-color: #fff;
     margin: auto;
     margin-top: 20px;
-    width: 80vw;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -216,7 +216,7 @@ img {vertical-align: middle;}
 /* ALL CATEGORIES */
 .all-categories {
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
 }
 
@@ -235,7 +235,7 @@ img {vertical-align: middle;}
 
 /* FOOTER */
 .footer {
-    width: 80vw;
+    width: 1200px;
     background-color: #ffceb2;
     margin: auto;
 }
@@ -271,11 +271,11 @@ img {vertical-align: middle;}
 
 .quiz-footer{
     position: fixed;
-    width: 80vw;
+    width: 1200px;
     height: 8vh;
     margin: auto;
     top: 92vh;
-    left: 10vw;
+    left: calc(50vw - 600px);
 }
 
 /* ######### QUIZ ######### */
@@ -301,7 +301,7 @@ button:active {
 
 .quizArea {
     padding-top: 60px;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -513,7 +513,7 @@ button:active {
     top: 85vh;
     left: 90vw;
     display: none;
-    background-color: #414141;
+    background-color: #4141418f;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -534,17 +534,17 @@ button:active {
     top: 60px;   
 }
 .aboutQuote {
-    width: 80vw;
+    width: 1200px;
     height: 300px;
     margin: auto;
     background-image: url("../img/jog.jpeg");
-    background-size: 80vw 800px;
+    background-size: 1200px 800px;
     background-position: left;
 }
 
 .aboutQuoteOverlay {
     background-color: rgba(0,0,0,0.5);
-    width: 80vw;
+    width: 1200px;
     height: 300px;
     margin: auto;
     display: flex;
@@ -572,8 +572,8 @@ button:active {
 } */
 
 .aboutUs {
-    width: 80vw;
-    height: 40vh;
+    width: 1200px;
+    height: 350px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -595,8 +595,8 @@ button:active {
 
 .aboutUsImg {
     /* padding-top: 30px; */
-    width: 40vw;
-    height: 40vh;
+    width: 500px;
+    height: 350px;
     margin: auto;
 }
 
@@ -609,7 +609,7 @@ button:active {
 }
 
 .aboutUsDescription {
-    width: 40vw;
+    width: 700px;
     margin: auto;
     padding: 20px 30px;
 }
@@ -617,8 +617,8 @@ button:active {
 .aboutTeam {
     margin: auto;
     margin-top: 20px;
-    width: 80vw;
-    height: 60vh;
+    width: 1200px;
+    height: 600px;
 }
 
 .aboutTeam > .aboutUsTitle {
@@ -629,15 +629,14 @@ button:active {
     display: flex;
     flex-direction: row;
     margin: auto;
-    margin-top: 20px;
 }
 
 .devWrap {
-    width: 300px;
+    position: relative;
+    width: 285px;
     background-color: #bbb;
-    padding: 20px 20px;
+    padding: 15px 15px;
     height: 450px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     transition: transform .2s;
@@ -645,8 +644,25 @@ button:active {
 
 }
 
+.dev1 {
+    margin: 15px 6px 15px 12px;
+}
+
+.dev2 {
+    margin: 15px 6px 15px 6px;
+}
+
+.dev3 {
+    margin: 15px 6px 15px 6px;
+}
+
+.dev4 {
+    margin: 15px 12px 15px 6px;
+}
+
 .devWrap:hover {
     transform: scale(1.1);
+    z-index: 9999;
 }
 
 .devWrap:active {
@@ -654,9 +670,9 @@ button:active {
 }
 
 .devWrap > a > img {
-    width: 260px;
+    width: 255px;
     height: 350px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 5px 10px 8px 10px #aaaaaa;
 
 }
@@ -665,10 +681,4 @@ button:active {
     margin: auto;
     padding-top: 10px;
     text-align: center;
-}
-
-.devDetails {
-    /* display: none; */
-    margin: auto;
-    padding-top: 10px;
 }
