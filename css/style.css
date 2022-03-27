@@ -518,6 +518,7 @@ button:active {
     font-weight: bolder;
     border-radius: 15px;
 }
+
 .goUp > a {
     text-decoration: none;
     color: #fff;
@@ -585,6 +586,7 @@ button:active {
 
 .aboutUsMission {
     background-color: #7790ff;
+    margin-bottom: 20px;
 }
 
 .aboutUsImg {
@@ -606,4 +608,57 @@ button:active {
     width: 40vw;
     margin: auto;
     padding: 20px 30px;
+}
+
+.aboutTeam {
+    margin: auto;
+    margin-top: 20px;
+    width: 80vw;
+    height: 60vh;
+}
+
+.aboutTeam > .aboutUsTitle {
+    height: 80px;
+}
+
+.aboutDevs {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.devWrap {
+    width: 300px;
+    background-color: #bbb;
+    padding: 20px 20px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s;
+    border-radius: 15px;
+
+}
+
+.devWrap:hover {
+    transform: scale(1.1);
+}
+
+.devWrap:active {
+    transform: scale(0.9);
+}
+
+.devWrap > a > img {
+    width: 260px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 8px 10px #aaaaaa;
+
+}
+
+.devInfo {
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
 }
