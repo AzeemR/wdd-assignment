@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DRAO Contact Us</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico?v=2">
-	<link rel ="stylesheet" href="../css/stylesheet.css">
-	<script src="script.js"></script>
-  
+	<link rel ="stylesheet" href="../css/stylesheet.css">  
 </head>
 <body>
   <!--Query Form-->
@@ -59,30 +57,29 @@
 	 <!--Query Form end-->
 	 
 	 <!--not to display the summary when the query form has been displayed-->
-     <div id="mysummary" style="display:none;">
-	 
-	     <!--summary-->
-         <div class="summary">
-              <h2>Summary</h2>
-              <p>First Name: <span id="FNAME"></span></p><br>
-			  <p>Surname: <span id="LNAME"></span></p><br>
-			  <p>Email address: <span id="EMAIL"></span></p><br>
-			  <p>Subject: <span id="SUBJECT"></span></p><br>
-			  <p>Details: <span id="DETAILS"></span></p><br>
-		  
-	   
-           <!--submit button-->
-           <div class="inputButtons">
-             <input type="submit" value="Submit" id="submitbutton" onclick="submitFormFunction()">
-          
-			 <br><br>
-           <!--edit button-->
-             <input type="edit" value="Edit" id="editbutton" onclick="editFormFunction()">
-           </div>	   
-		 </div>	
-     </div>		 
+		<div id="mysummary" style="display:none;">
+			<!--summary-->
+			<div class="summary">
+				<h2>Summary</h2>
+				<p>First Name: <span id="FNAME"></span></p><br>
+				<p>Surname: <span id="LNAME"></span></p><br>
+				<p>Email address: <span id="EMAIL"></span></p><br>
+				<p>Subject: <span id="SUBJECT"></span></p><br>
+				<p>Details: <span id="DETAILS"></span></p><br>
+			
+		
+			<!--submit button-->
+			<div class="inputButtons">
+				<input type="submit" value="Submit" id="submitbutton" onclick="submitFormFunction()">
+			
+				<br><br>
+			<!--edit button-->
+				<input type="edit" value="Edit" id="editbutton" onclick="editFormFunction()">
+			</div>	   
+			</div>	
+		</div>
     </form>   
- </div>	
-			 
+	</div>	
+	<script src="../js/query.js"></script>
   </body>
 </html>  
