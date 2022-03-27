@@ -532,12 +532,19 @@ button:active {
     width: 80vw;
     height: 300px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url("../img/jog.jpeg");
     background-size: 80vw 800px;
     background-position: left;
+}
+
+.aboutQuoteOverlay {
+    background-color: rgba(0,0,0,0.5);
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .quote1, .quote2 {
@@ -549,7 +556,6 @@ button:active {
     font-size: 30px;
     font-weight: bolder;
     color: #fff;
-    background-color: rgba(0,0,0,0.5);
 }
 /* 
 .quote1 {
@@ -563,23 +569,41 @@ button:active {
 .aboutUs {
     width: 80vw;
     height: 40vh;
+    margin: auto;
+    margin-top: 20px;
     display: flex;
     align-items: center;
+}
+
+.aboutUsWho {
+    background-color: #ffceb2;
+}
+
+.aboutUsVision {
+    background-color: #91ffb2;
+}
+
+.aboutUsMission {
+    background-color: #7790ff;
+}
+
+.aboutUsImg {
+    /* padding-top: 30px; */
+    width: 40vw;
+    height: 40vh;
     margin: auto;
-    /* background-image: url("../img/company.jpeg"); */
 }
 
 .aboutUsTitle {
     text-align: center;
     font-size: 30px;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     font-weight: bold;
-    width: 40vw;
     margin: auto;
 }
 
 .aboutUsDescription {
-    width: 50vw;
+    width: 40vw;
     margin: auto;
     padding: 20px 30px;
 }
