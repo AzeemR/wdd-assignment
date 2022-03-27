@@ -64,26 +64,34 @@ function toggleDisplay() {
     }
 }
 
-function funcQuizResult() {
-    let i = 1;
-    let tot = 0;
-    while (i <11) {
-        let ques = "q" + i;
-        let ans = document.getElementById(ques);
-        if (ans.checked) {
-            tot += 2;
+function getRadioValue(radioArray,tot) {
+    let c = 0;
+    for (let i = 0; i < radioArray.length; i++) {
+        if (radioArray[i].checked) {
+            tot += Number(radioArray[i].value)
         } else {
-            tot -= 1;
+            c += 1;
         }
-        i += 1;
+        
     }
-    
+    if (c === 4) {
+        tot -= 1;
+    }
+    return(tot)
+}
+
+function funcQuizResult() {
+    let tot = 0;
+    for (let i = 1; i <= 10; i++) {
+        let q = "q" + i;
+        let radioArray = document.form[q];
+        tot = getRadioValue(radioArray, tot)
+    }
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     pop(tot,false);
     
 }
-
 
 function pop(tot,popup) {
     if(popup === false) {

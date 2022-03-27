@@ -666,3 +666,9 @@ button:active {
     padding-top: 10px;
     text-align: center;
 }
+
+.devDetails {
+    /* display: none; */
+    margin: auto;
+    padding-top: 10px;
+}
