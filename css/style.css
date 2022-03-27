@@ -586,6 +586,7 @@ button:active {
 
 .aboutUsMission {
     background-color: #7790ff;
+    margin-bottom: 20px;
 }
 
 .aboutUsImg {
@@ -607,4 +608,43 @@ button:active {
     width: 40vw;
     margin: auto;
     padding: 20px 30px;
+}
+
+.aboutTeam {
+    margin: auto;
+    margin-top: 20px;
+    width: 80vw;
+    height: 60vh;
+}
+
+.aboutTeam > .aboutUsTitle {
+    height: 80px;
+}
+
+.aboutDevs {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.devWrap {
+    width: 300px;
+    background-color: #bbb;
+    padding: 10px 20px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.devWrap > img {
+    width: 260px;
+    height: 350px;
+}
+
+.devInfo {
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
 }
