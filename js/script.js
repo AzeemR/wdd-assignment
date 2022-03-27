@@ -28,6 +28,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Go Up
+// Show when scrolled down
+var mybutton = document.getElementById("up");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
 
 /////// Quiz //////
 
