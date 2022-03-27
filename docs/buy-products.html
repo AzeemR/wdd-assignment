@@ -277,14 +277,15 @@
             <button onclick="validation()">Submit</button>
         </div>
 
+        <!-- Invoice -->
         <div id="invoice"></div>
     </div>
 
     <script>
 
-        let arr1 = [];
-        let arr2 = [];
-        let arr3 = [];
+        let arr1 = []; // Product Title
+        let arr2 = []; // Product Price
+        let arr3 = []; // Product Quantity
 
         function prodDet(num) {
             let prodTitle = "prodTitle" + num;
@@ -365,12 +366,12 @@
 
             for (let i = 0; i < arr1.length; i++) {
                 let prevHTML = document.getElementById("invoice").innerHTML
-                document.getElementById("invoice").innerHTML = prevHTML + "<p>Product: " + arr1[i] + "<br>Price: Rs." + arr2[i] + "<br>Quantity: " + arr3[i] + "</p>";
+                document.getElementById("invoice").innerHTML = prevHTML + "<p>Product: " + arr1[i] + "<br>Price: Rs. " + arr2[i] + "<br>Quantity: " + arr3[i] + "</p>";
                 
             }
 
             let prevHTML = document.getElementById("invoice").innerHTML
-            document.getElementById("invoice").innerHTML = prevHTML + "<hr><div>Total : Rs." + tot + "</div><hr>";
+            document.getElementById("invoice").innerHTML = prevHTML + "<hr><div>Total : Rs. " + tot + "</div><hr>";
 
         }
     </script>
@@ -382,8 +383,12 @@
       <div class="line-2">
         Developed by <a href="Student1-details.html">Oshini Godapitiyage</a>
       </div>
-      <div ><a class="backt" href="#top"> Back to top </a></div>
    </footer>
+
+    <!-- Back to top button -->
+    <div class="goUp" id="up">
+        <a href="#top">&#8963;</a>
+    </div>
 
    <script type="text/javascript">
     function delayer(){

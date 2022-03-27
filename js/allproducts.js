@@ -40,3 +40,17 @@ function validation(){
     alert("Dear " +fname+lname+ ", Your order has been requested successfully!! You will recieve an confirmation email to " +email+ " shortly.\n\n\n Thank You for shopping with us!!" );
     }
   }
+
+// Go Up
+// Show when scrolled down
+var goTop = document.getElementById("up");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    goTop.style.display = "block";
+} else {
+    goTop.style.display = "none";
+}
+}
