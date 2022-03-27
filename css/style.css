@@ -7,7 +7,6 @@
 
 body {
     background-color: var(--mainColour);
-    font-family: 'Courier New', Courier, monospace;
 }
 
 /* HOMEPAGE */
@@ -15,7 +14,7 @@ body {
 /* Navbar */
 .nav-section {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -255,6 +254,7 @@ button:active {
 }
 
 .quizArea {
+    padding-top: 60px;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -304,14 +304,15 @@ button:active {
 /* BUY PRODUCTS */
 
 .container {
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto;
    width: 1000px;
 }
 
-.container h1{
+.protitle{
     text-align: center;
-    font-size: 300%;
+    font-size: 40px;
+    padding-top: 70px;
+    font-weight: bold;
 }
 
 .btncart {
