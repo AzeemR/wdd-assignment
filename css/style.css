@@ -522,3 +522,33 @@ button:active {
     text-decoration: none;
     color: #fff;
 }
+
+/* ####### ABOUT US ####### */
+.mainAbout {
+    position: relative;
+    top: 60px;   
+}
+
+.aboutUs {
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-image: url("../img/company.jpg");
+}
+
+.aboutUsTitle {
+    text-align: center;
+    font-size: 40px;
+    /* padding-top: 20px; */
+    font-weight: bold;
+    width: 40vw;
+    margin: auto;
+}
+
+.aboutUsDescription {
+    width: 40vw;
+    margin: auto;
+    padding: 10px 10px;
+}
