@@ -2,30 +2,21 @@
 <html lang="eng">
 <head>
 	<title>Thumbnail image</title>
+	<link rel="stylesheet" href="../css/thumbnailstyle.css">
+	<script>
+		function colorbg()
+		{
+			var x=document.getElementById("selectid");
+			var bgcolor=x.options[x.selectedIndex].value;
+			document.body.style.backgroundColor=bgcolor;
+		}
+	</script>
 	<style>
-		.flex-container {display: flex;}
-		.flex {display: flex;
-		       margin: auto;
-			   justify-content: space-around;
-		}
-		.center {
-            margin: auto;
-			width: 40px;
-          }
-         .PT {color:red;
-              font-size: 18px;
-         }
-         .b {color: blue;}
-
-         .PB {color: red;
-              font-size: 18px;
-         }
-		 body {color: blue;
-		       color: red;
-			   color: yellow;
-			   color: green;
-			   color: pink;
-		}
+		.blue {background-color: blue;}
+        .red {background-color: red;}
+        .yellow {background-color: yellow;}
+        .green {background-color: green;}
+        .orange {background-color: orange;}
 	</style>
 </head>
 <body>
@@ -34,34 +25,38 @@
 		<!-- Change text color -->
 		<div>
 			<p class="PT">Page Text Color</p>
-			<select name="Page Text Color" id="Page Text Color" class="b">
-				<option value="blue" class="b">blue</option>
-				<option value="red" class="b">red</option>
-				<option value="yellow" class="b">yellow</option>
-				<option value="green" class="b">green</option>
-				<option value="pink" class="b">pink</option>
+			<select id="SID">
+				<option value="selected hidden"> --Select Color-- </option>
+				<option value="blue">blue</option>
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+				<option value="green">green</option>
+				<option value="orange">orange</option>
 			</select>
+			<button onclick="colortx()">Change color</button>
 		</div>
  
 		<div class="flex">
 			<!-- Thumbnails section -->
-			<div><a href="http://127.0.0.1:5500/docs/Nike.html"><img src="../Nike brand.jpg" width="200" height="150"></a></div>
-			<div><a href="http://127.0.0.1:5500/docs/Puma.html"><img src="../Puma brand.jpg" width="200" height="150"></a></div>
-			<div><a href="http://127.0.0.1:5500/docs/Adidas.html"><img src="../Adidas brand.jpg" width="200" height="150"></a></div>
-			<div><a href="http://127.0.0.1:5500/docs/New%20Balance.html"><img src="../New blance brand.png" width="200" height="150"></a></div>
-			<div><a href="http://127.0.0.1:5500/docs/Reebok.html"><img src="../Reebok brand.png" width="200" height="150"></a></div>
+			<div><a href="http://127.0.0.1:5500/docs/Nike.html"><img src="../img/Nike brand.jpg" width="200" height="150"></a></div>
+			<div><a href="http://127.0.0.1:5500/docs/Puma.html"><img src="../img/Puma brand.jpg" width="200" height="150"></a></div>
+			<div><a href="http://127.0.0.1:5500/docs/Adidas.html"><img src="../img/Adidas brand.jpg" width="200" height="150"></a></div>
+			<div><a href="http://127.0.0.1:5500/docs/New%20Balance.html"><img src="../img/New blance brand.png" width="200" height="150"></a></div>
+			<div><a href="http://127.0.0.1:5500/docs/Reebok.html"><img src="../img/Reebok brand.png" width="200" height="150"></a></div>
 		</div>
 
 		<!-- Change background color -->
 		<div>
 			<p class="PB">Page Background Color</p>
-			<select name="Page Background Color" id="Page Background Color" class="b">
-				<option value="blue" class="b">blue</option>
-				<option value="red" class="b">red</option>
-				<option value="yellow" class="b">yellow</option>
-				<option value="green" class="b">green</option>
-				<option value="black" class="b">black</option>
+			<select id="selectid">
+				<option value="selected hidden"> --Select Color-- </option>
+				<option value="blue">blue</option>
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+				<option value="green">green</option>
+				<option value="orange">orange</option>
 			</select>
+			<button onclick="colorbg()">Change color</button>
 		</div>
 	</div>
 	
