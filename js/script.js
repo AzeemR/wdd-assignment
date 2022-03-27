@@ -30,19 +30,17 @@ function showSlides(n) {
 
 // Go Up
 // Show when scrolled down
-var mybutton = document.getElementById("up");
+var goTop = document.getElementById("up");
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    goTop.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    goTop.style.display = "none";
   }
 }
-
-
 
 /////// Quiz //////
 

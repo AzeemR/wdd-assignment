@@ -518,6 +518,7 @@ button:active {
     font-weight: bolder;
     border-radius: 15px;
 }
+
 .goUp > a {
     text-decoration: none;
     color: #fff;
