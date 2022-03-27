@@ -25,13 +25,31 @@ ul{
     opacity: 0.7;
    
 }
+
+
 body{
+
+    margin: auto;
     background-color:lightgrey;
     background-image:url("../img/logo.png");
     height: 50%;
+    padding-top: 60px;
+    padding-left: 60px;
    
     /* Center and scale the image nicely */
     background-position:relative;
     background-repeat: no-repeat;
-    background: size 50px;
+    background-position-x: 5vw;
+    background-position-y: 12vh;
+    background-size: 400px;
+}
+
+  
+.index-footer {
+  position: fixed;
+  width: 80vw;
+  height: 8vh;
+  margin: auto;
+  top: 92vh;
+  left: 10vw;
 }

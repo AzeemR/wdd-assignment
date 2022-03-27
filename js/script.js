@@ -28,6 +28,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Go Up
+// Show when scrolled down
+var mybutton = document.getElementById("up");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
 
 /////// Quiz //////
 
@@ -64,6 +79,9 @@ function funcQuizResult() {
         }
         i += 1;
     }
+    
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     pop(tot,false);
     
 }
@@ -81,7 +99,6 @@ function pop(tot,popup) {
         popup = true
 
     } else {
-        // document.getElementById("box").style.display = "none";
         location.replace("../docs/home.html")
         popup = false
     }

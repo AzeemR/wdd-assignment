@@ -9,11 +9,11 @@ body {
     background-color: var(--mainColour);
 }
 
-/* HOMEPAGE */
+/* ######### HOMEPAGE ######### */
 
 /* Navbar */
 .nav-section {
-    max-width: 1200px;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -24,19 +24,19 @@ body {
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    width: 1200px;
+    width: 80vw;
     /* top: 0;
     left: 83px; */
     z-index: 9999;
 }
 
 .navbar img {
-    padding: 5px 20px;
+    padding: 0 20px;
 
 }
 .nav {
     overflow: hidden;
-    max-width: 1200px;
+    width: 80vw;
     background-color: #333;
     margin: auto;
     display: flex;
@@ -75,7 +75,7 @@ img {vertical-align: middle;}
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1200px;
+    width: 80vw;
     position: relative;
     margin: auto;
 
@@ -163,7 +163,7 @@ img {vertical-align: middle;}
 /* CATEGORY GENDER */
 .gender{
     overflow: hidden;
-    max-width: 1200px;
+    width: 80vw;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -179,7 +179,7 @@ img {vertical-align: middle;}
 /* CAMPING BANNER */
 .camping {
     overflow: hidden;
-    max-width: 1200px;
+    width: 80vw;
     margin: auto;
     margin-top: 75px;
 }
@@ -189,7 +189,7 @@ img {vertical-align: middle;}
     background-color: #fff;
     margin: auto;
     margin-top: 20px;
-    max-width: 1200px;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -216,7 +216,7 @@ img {vertical-align: middle;}
 /* ALL CATEGORIES */
 .all-categories {
     overflow: hidden;
-    max-width: 1200px;
+    width: 80vw;
     margin: auto;
 }
 
@@ -227,12 +227,58 @@ img {vertical-align: middle;}
 .all-categories td {
     text-align: center;
 }
+
 /* 
 .all-categories td:hover {
     background-color: #fff;
 } */
 
-/* QUIZ */
+/* FOOTER */
+.footer {
+    width: 80vw;
+    background-color: #ffceb2;
+    margin: auto;
+}
+
+.line-1 {
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line-2 > a {
+    color: #00f;
+    text-decoration: none;
+}
+
+.line-2 > a:hover {
+    padding: 5px;
+    background-color: var(--secondaryColour);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.line-2 > a:visited {
+    color: #00f;
+}
+
+.quiz-footer{
+    position: fixed;
+    width: 80vw;
+    height: 8vh;
+    margin: auto;
+    top: 92vh;
+    left: 10vw;
+}
+
+/* ######### QUIZ ######### */
 button {
     background-color: var(--secondaryColour);
     color: #fff;
@@ -255,7 +301,7 @@ button:active {
 
 .quizArea {
     padding-top: 60px;
-    max-width: 1200px;
+    width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -301,7 +347,7 @@ button:active {
     border-radius: 1px solid #000;
 }
 
-/* BUY PRODUCTS */
+/* ######### BUY PRODUCTS ######### */
 
 .container {
    margin: auto;
@@ -453,4 +499,56 @@ button:active {
     width: 500px;
     margin: auto;
     margin-bottom: 10px;
+}
+
+
+/* BACK TO TOP BUTTON */
+
+.goUp {
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+    display: none;
+    background-color: #414141;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.goUp > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ####### ABOUT US ####### */
+.mainAbout {
+    position: relative;
+    top: 60px;   
+}
+
+.aboutUs {
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-image: url("../img/company.jpg");
+}
+
+.aboutUsTitle {
+    text-align: center;
+    font-size: 40px;
+    /* padding-top: 20px; */
+    font-weight: bold;
+    width: 40vw;
+    margin: auto;
+}
+
+.aboutUsDescription {
+    width: 40vw;
+    margin: auto;
+    padding: 10px 10px;
 }
