@@ -639,7 +639,7 @@ button:active {
     height: 450px;
     display: flex;
     flex-direction: column;
-    transition: transform .2s;
+    transition: transform .5s;
     border-radius: 15px;
 
 }
@@ -680,5 +680,33 @@ button:active {
 .devInfo {
     margin: auto;
     padding-top: 10px;
+    text-align: center;
+}
+
+.devOverlay {
+    background-color: #383838e5;  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+
+.devWrap:hover .devOverlay {
+    opacity: 1;
+  }
+  
+.devDescription {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
