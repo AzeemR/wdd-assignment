@@ -440,6 +440,10 @@ button:active {
     margin: auto;
 }
 
+.personal {
+    text-align: center;
+}
+
 .personal > form {
     margin: auto;
 }
