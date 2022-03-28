@@ -9,6 +9,26 @@ body {
     background-color: var(--mainColour);
 }
 
+button {
+    background-color: var(--secondaryColour);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(1.0);
+}
+
 /* ######### HOMEPAGE ######### */
 
 /* Navbar */
@@ -270,36 +290,7 @@ img {vertical-align: middle;}
     color: #fdff93;
 }
 
-.quiz-footer{
-    position: fixed;
-    width: 1200px;
-    height: 8vh;
-    margin: auto;
-    top: 92vh;
-    left: calc(50vw - 600px);
-}
-
 /* ######### QUIZ ######### */
-button {
-    background-color: var(--secondaryColour);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    transition: transform .2s;
-}
-
-button:hover {
-    transform: scale(1.2);
-}
-
-button:active {
-    transform: scale(1.0);
-}
-
 .quizArea {
     padding-top: 60px;
     width: 1200px;
@@ -315,6 +306,20 @@ button:active {
 
 .quizArea ul {
     list-style-type: none;
+}
+
+.quizStart {
+    width: 1200px;
+    background-image: url('../img/quizbg.jpg');
+}
+
+.quizStartOverlay {
+    width: 1200px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 
 #box{
@@ -346,6 +351,34 @@ button:active {
     background: var(--secondaryColour);
     display: inline-block;
     border-radius: 1px solid #000;
+}
+
+#title1 {
+    margin: 150px 0;
+}
+
+#title1 h1 {
+    font-size: 300%;
+    margin: 100px 0;
+}
+
+#quizBtn1 {
+    margin-bottom: 150px;
+    box-shadow: 0 0 15px black;
+
+}
+
+#quizBtn2 {
+    margin-bottom: 200px;
+}
+
+.quiz-footer{
+    position: fixed;
+    width: 1200px;
+    height: 8vh;
+    margin: auto;
+    top: 92vh;
+    left: calc(50vw - 600px);
 }
 
 /* ######### BUY PRODUCTS ######### */

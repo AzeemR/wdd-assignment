@@ -45,22 +45,28 @@ function scrollFunction() {
 /////// Quiz //////
 
 function toggleDisplay() {
-    var x = document.getElementById("title1");
-    var y = document.getElementById("title2");
-    var z = document.getElementById("btn");
-    var u = document.getElementById("btn2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-        y.style.display = "none";
+    var t1 = document.getElementById("title1");
+    var t2 = document.getElementById("title2");
+    var btn1 = document.getElementById("quizBtn1");
+    var btn2 = document.getElementById("quizBtn2");
+    var terms = document.getElementById("terms");
+    if (t1.style.display === "none") {
+        t1.style.display = "block";
+        t2.style.display = "none";
 
-        z.style.display = "block";
-        u.style.display = "none";
+        btn1.style.display = "block";
+        btn2.style.display = "none";
+
+
     } else {
-        x.style.display = "none";
-        y.style.display = "block";
+        t1.style.display = "none";
+        t2.style.display = "block";
         
-        u.style.display = "block";
-        z.style.display = "none";
+        btn2.style.display = "block";
+        btn1.style.display = "none";
+
+        terms.style.display = "none";
+
     }
 }
 
