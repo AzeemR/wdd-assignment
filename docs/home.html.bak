@@ -14,7 +14,7 @@
     <div class="nav-section">
         <div class="navbar">
             <div>
-                <img src="../img/logo-3.png" height="60px">
+                <img src="../img/logo-3.png" alt="logo"height="60px">
             </div>
             <div class="nav">
                 <a href="home.html" class="active">Home</a>
@@ -23,6 +23,7 @@
                 <a href="quiz.html">Quiz</a>
                 <a href="query.html">Contact Us</a>
                 <a href="buy-products.html">Site Map</a>
+				<a href="blog.html">Blog</a>
             </div>
         </div>
     </div>
@@ -35,15 +36,15 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-            <a href="buy-products.html"><img src="../img/slider-1.png" style="width:100%"></a>
+            <a href="buy-products.html"><img src="../img/slider-1.png" alt="pro1" style="width:100%"></a>
             </div>
         
             <div class="mySlides fade">
-            <a href="buy-products.html"><img src="../img/slider-2.png" style="width:100%"></a>
+            <a href="buy-products.html"><img src="../img/slider-2.png" alt="pro2" style="width:100%"></a>
             </div>
         
             <div class="mySlides fade">
-            <a href="buy-products.html"><img src="../img/slider-3.png" style="width:100%"></a>
+            <a href="buy-products.html"><img src="../img/slider-3.png" alt="pro3" style="width:100%"></a>
             </div>
         
             <!-- Next and previous buttons -->
@@ -67,16 +68,16 @@
             </div>
                 <table class="gender">
                     <tr>
-                        <td><img src="../img/activewear-men.png"></td>
-                        <td><img src="../img/activewear-women.png"></td>
-                        <td><img src="../img/activewear-kids.png"></td>
+                        <td><img src="../img/activewear-men.png" alt="wear1"></td>
+                        <td><img src="../img/activewear-women.png" alt="wear2"></td>
+                        <td><img src="../img/activewear-kids.png" alt="wear3"></td>
                     </tr>
                 </table>
         </div>
 
         <!-- Camping Banner -->
         <div class="camping">
-            <a href="buy-products.html"><img src="../img/strip-1.png"></a>
+            <a href="buy-products.html"><img src="../img/strip-1.png" alt="camp"></a>
         </div>
 
         <!-- Team Sports Section -->
@@ -85,16 +86,16 @@
         </div>
         <div class="team-sports">
             <div class="team-single">
-                <a href="buy-products.html"><img src="../img/group-1.png"></a>
+                <a href="buy-products.html"><img src="../img/group-1.png" alt="t1"></a>
             </div>
             <div class="team-other">
                 <div>
-                    <a href="buy-products.html"><img src="../img/group-2.png"></a>
-                    <a href="buy-products.html"><img src="../img/group-3.png"></a>
+                    <a href="buy-products.html"><img src="../img/group-2.png" alt="t2"></a>
+                    <a href="buy-products.html"><img src="../img/group-3.png" alt="t3"></a>
                 </div>
                 <div>
-                    <a href="buy-products.html"><img src="../img/group-4.png"></a>
-                    <a href="buy-products.html"><img src="../img/group-5.png"></a>
+                    <a href="buy-products.html"><img src="../img/group-4.png" alt="t4"></a>
+                    <a href="buy-products.html"><img src="../img/group-5.png" alt="t5"></a>
                 </div>
             </div>
         </div>
@@ -146,7 +147,7 @@
         </div>
     </div>
 
-    <hr style="margin-top: 70px; width: 80vw;">
+    <hr style="margin-top: 70px; width: 1200px;">
 
     <footer class="footer">
         <div class="line-1">

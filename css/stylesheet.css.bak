@@ -11,7 +11,7 @@ body{background-image:url("../img/fitness-workout-sportswear.jpg");
 		background: #E1E1E1;
 		padding:25px;
         border-radius:5px;
-		top:55%;
+		top:50%;
 		left:20%;
 		width:100%;
 		transform:translate(-50%,-50%);}
