@@ -29,7 +29,7 @@
     <!-- Nav bar end -->
 
     <!-- Main Content Start -->
-    <div class="mainAbout">
+    <div class="mainAbout" id="#top">
         <div class="aboutQuote">
             <div class="aboutQuoteOverlay">
                 <div class="quote1">
@@ -84,7 +84,7 @@
 
         <div class="aboutUs aboutUsMission">
             <div>
-                <img class="aboutUsImg" src="../img/company.jpg">
+                <img class="aboutUsImg" src="../img/mission.jpeg">
             </div>
             <div>
                 <div class="aboutUsTitle">Our Mission</div>
@@ -101,8 +101,61 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+    
+    <br>
+
+    <!-- Our Team -->
+    <div class="aboutTeam" id="devs">
+        <div class="aboutUsTitle">Meet Our Team</div>
+        <div class="aboutDevs">
+            <div class="devWrap">
+                <a href="Student1-details.html"><img src="../img/student1.jpeg"></a>
+                <div class="devInfo">
+                    Name : Oshini Kithmini<br>
+                    IIT Number : 20210709
+                </div>
+            </div>
+            <div class="devWrap">
+                <a href="Student2-details.html"><img src="../img/student2.jpeg"></a>
+                <div class="devInfo">
+                    Name : Dulmini Dodawatte<br>
+                    IIT Number : 20212103
+                </div>
+            </div>
+            <div class="devWrap">
+                <a href="Student3-details.html"><img src="../img/student3.jpeg"></a>
+                <div class="devInfo">
+                    Name : Azeem Rashard<br>
+                    IIT Number : 20210709
+                </div>
+            </div>
+            <div class="devWrap">
+                <a href="Student4-details.html"><img src="../img/student1.jpeg"></a>
+                <div class="devInfo">
+                    Name : Ransi Kavindi<br>
+                    IIT Number : 20212103
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-top: 10px; width: 80vw;">
+
+    <footer class="footer">
+        <div class="line-1">
+            Copyright &copy; 2022 DRAO (Pvt) Ltd. All Rights Reserved.
+        </div>
+        <div class="line-2">
+            Developed by <a href="Student3-details.html">Azeem Rashard</a>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="goUp" id="up">
+        <a href="#top">&#8963;</a>
+    </div>
+
+    <script src="../js/about-us.js"></script>
 </body>
 </html>
