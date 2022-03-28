@@ -9,11 +9,31 @@ body {
     background-color: var(--mainColour);
 }
 
+button {
+    background-color: var(--secondaryColour);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(1.0);
+}
+
 /* ######### HOMEPAGE ######### */
 
 /* Navbar */
 .nav-section {
-    width: 80vw;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -24,7 +44,7 @@ body {
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    width: 80vw;
+    width: 1200px;
     /* top: 0;
     left: 83px; */
     z-index: 9999;
@@ -36,7 +56,7 @@ body {
 }
 .nav {
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     background-color: #333;
     margin: auto;
     display: flex;
@@ -75,7 +95,7 @@ img {vertical-align: middle;}
 }
 /* Slideshow container */
 .slideshow-container {
-    width: 80vw;
+    width: 1200px;
     position: relative;
     margin: auto;
 
@@ -163,7 +183,7 @@ img {vertical-align: middle;}
 /* CATEGORY GENDER */
 .gender{
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -179,7 +199,7 @@ img {vertical-align: middle;}
 /* CAMPING BANNER */
 .camping {
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
     margin-top: 75px;
 }
@@ -189,7 +209,7 @@ img {vertical-align: middle;}
     background-color: #fff;
     margin: auto;
     margin-top: 20px;
-    width: 80vw;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -216,7 +236,7 @@ img {vertical-align: middle;}
 /* ALL CATEGORIES */
 .all-categories {
     overflow: hidden;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
 }
 
@@ -235,9 +255,10 @@ img {vertical-align: middle;}
 
 /* FOOTER */
 .footer {
-    width: 80vw;
-    background-color: #ffceb2;
+    width: 1200px;
+    background-color: #333;
     margin: auto;
+    color: #fff;
 }
 
 .line-1 {
@@ -254,7 +275,7 @@ img {vertical-align: middle;}
 }
 
 .line-2 > a {
-    color: #00f;
+    color: #fdff93;
     text-decoration: none;
 }
 
@@ -266,42 +287,13 @@ img {vertical-align: middle;}
 }
 
 .line-2 > a:visited {
-    color: #00f;
-}
-
-.quiz-footer{
-    position: fixed;
-    width: 80vw;
-    height: 8vh;
-    margin: auto;
-    top: 92vh;
-    left: 10vw;
+    color: #fdff93;
 }
 
 /* ######### QUIZ ######### */
-button {
-    background-color: var(--secondaryColour);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    transition: transform .2s;
-}
-
-button:hover {
-    transform: scale(1.2);
-}
-
-button:active {
-    transform: scale(1.0);
-}
-
 .quizArea {
     padding-top: 60px;
-    width: 80vw;
+    width: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -314,6 +306,20 @@ button:active {
 
 .quizArea ul {
     list-style-type: none;
+}
+
+.quizStart {
+    width: 1200px;
+    background-image: url('../img/quizbg.jpg');
+}
+
+.quizStartOverlay {
+    width: 1200px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 
 #box{
@@ -345,6 +351,34 @@ button:active {
     background: var(--secondaryColour);
     display: inline-block;
     border-radius: 1px solid #000;
+}
+
+#title1 {
+    margin: 150px 0;
+}
+
+#title1 h1 {
+    font-size: 300%;
+    margin: 100px 0;
+}
+
+#quizBtn1 {
+    margin-bottom: 150px;
+    box-shadow: 0 0 15px black;
+
+}
+
+#quizBtn2 {
+    margin-bottom: 200px;
+}
+
+.quiz-footer{
+    position: fixed;
+    width: 1200px;
+    height: 8vh;
+    margin: auto;
+    top: 92vh;
+    left: calc(50vw - 600px);
 }
 
 /* ######### BUY PRODUCTS ######### */
@@ -440,6 +474,10 @@ button:active {
     margin: auto;
 }
 
+.personal {
+    text-align: center;
+}
+
 .personal > form {
     margin: auto;
 }
@@ -509,7 +547,7 @@ button:active {
     top: 85vh;
     left: 90vw;
     display: none;
-    background-color: #414141;
+    background-color: #4141418f;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -530,17 +568,17 @@ button:active {
     top: 60px;   
 }
 .aboutQuote {
-    width: 80vw;
+    width: 1200px;
     height: 300px;
     margin: auto;
     background-image: url("../img/jog.jpeg");
-    background-size: 80vw 800px;
+    background-size: 1200px 800px;
     background-position: left;
 }
 
 .aboutQuoteOverlay {
     background-color: rgba(0,0,0,0.5);
-    width: 80vw;
+    width: 1200px;
     height: 300px;
     margin: auto;
     display: flex;
@@ -568,8 +606,8 @@ button:active {
 } */
 
 .aboutUs {
-    width: 80vw;
-    height: 40vh;
+    width: 1200px;
+    height: 350px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -591,8 +629,8 @@ button:active {
 
 .aboutUsImg {
     /* padding-top: 30px; */
-    width: 40vw;
-    height: 40vh;
+    width: 500px;
+    height: 350px;
     margin: auto;
 }
 
@@ -605,7 +643,7 @@ button:active {
 }
 
 .aboutUsDescription {
-    width: 40vw;
+    width: 700px;
     margin: auto;
     padding: 20px 30px;
 }
@@ -613,8 +651,8 @@ button:active {
 .aboutTeam {
     margin: auto;
     margin-top: 20px;
-    width: 80vw;
-    height: 60vh;
+    width: 1200px;
+    height: 600px;
 }
 
 .aboutTeam > .aboutUsTitle {
@@ -625,24 +663,40 @@ button:active {
     display: flex;
     flex-direction: row;
     margin: auto;
-    margin-top: 20px;
 }
 
 .devWrap {
-    width: 300px;
+    position: relative;
+    width: 285px;
     background-color: #bbb;
-    padding: 20px 20px;
+    padding: 15px 15px;
     height: 450px;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    transition: transform .2s;
+    transition: transform .5s;
     border-radius: 15px;
 
 }
 
+.dev1 {
+    margin: 15px 6px 15px 12px;
+}
+
+.dev2 {
+    margin: 15px 6px 15px 6px;
+}
+
+.dev3 {
+    margin: 15px 6px 15px 6px;
+}
+
+.dev4 {
+    margin: 15px 12px 15px 6px;
+}
+
 .devWrap:hover {
     transform: scale(1.1);
+    z-index: 9999;
 }
 
 .devWrap:active {
@@ -650,9 +704,9 @@ button:active {
 }
 
 .devWrap > a > img {
-    width: 260px;
+    width: 255px;
     height: 350px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 5px 10px 8px 10px #aaaaaa;
 
 }
@@ -660,5 +714,33 @@ button:active {
 .devInfo {
     margin: auto;
     padding-top: 10px;
+    text-align: center;
+}
+
+.devOverlay {
+    background-color: #383838e5;  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+
+.devWrap:hover .devOverlay {
+    opacity: 1;
+  }
+  
+.devDescription {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }

@@ -3,14 +3,6 @@
 <head>
 	<title>Thumbnail image</title>
 	<link rel="stylesheet" href="../css/thumbnailstyle.css">
-	<script>
-		function colorbg()
-		{
-			var x=document.getElementById("selectid");
-			var bgcolor=x.options[x.selectedIndex].value;
-			document.body.style.backgroundColor=bgcolor;
-		}
-	</script>
 	<style>
 		.blue {background-color: blue;}
         .red {background-color: red;}
@@ -25,7 +17,7 @@
 		<!-- Change text color -->
 		<div>
 			<p class="PT">Page Text Color</p>
-			<select>
+			<select id="sid">
 				<option value="selected hidden"> --Select Color-- </option>
 				<option value="blue">blue</option>
 				<option value="red">red</option>
@@ -33,15 +25,16 @@
 				<option value="green">green</option>
 				<option value="orange">orange</option>
 			</select>
+			<button onclick="colortx()">Change color</button>
 		</div>
  
 		<div class="flex">
 			<!-- Thumbnails section -->
-			<div><a href="Nike.html"><img src="../img/Nike brand.jpg" width="200" height="150"></a></div>
-			<div><a href="Puma.html"><img src="../img/Puma brand.jpg" width="200" height="150"></a></div>
-			<div><a href="Adidas.html"><img src="../img/Adidas brand.jpg" width="200" height="150"></a></div>
-			<div><a href="New%20Balance.html"><img src="../img/New blance brand.png" width="200" height="150"></a></div>
-			<div><a href="Reebok.html"><img src="../img/Reebok brand.png" width="200" height="150"></a></div>
+			<div><a href="Nike.html" target="iframe_a"><img src="../img/Nike brand.jpg" width="200" height="150"></a></div>
+			<div><a href="Puma.html" target="iframe_a"><img src="../img/Puma brand.jpg" width="200" height="150"></a></div>
+			<div><a href="Adidas.html" target="iframe_a"><img src="../img/Adidas brand.jpg" width="200" height="150"></a></div>
+			<div><a href="New-Balance.html" target="iframe_a"><img src="../img/New blance brand.png" width="200" height="150"></a></div>
+			<div><a href="Reebok.html" target="iframe_a"><img src="../img/Reebok brand.png" width="200" height="150"></a></div>
 		</div>
 
 		<!-- Change background color -->
@@ -60,7 +53,10 @@
 	</div>
 	
 	<div class="center">
-		<iframe src="" height="300" width="300" title="Brand"></iframe>
+		<iframe src="../docs/Nike.html" name="iframe_a" height="800" width="100%" title="Brand"></iframe>
+
 	</div>
+    <script src="../js/script.js"></script>
+
 </body>
 </html>

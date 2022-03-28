@@ -45,45 +45,59 @@ function scrollFunction() {
 /////// Quiz //////
 
 function toggleDisplay() {
-    var x = document.getElementById("title1");
-    var y = document.getElementById("title2");
-    var z = document.getElementById("btn");
-    var u = document.getElementById("btn2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-        y.style.display = "none";
+    var t1 = document.getElementById("title1");
+    var t2 = document.getElementById("title2");
+    var btn1 = document.getElementById("quizBtn1");
+    var btn2 = document.getElementById("quizBtn2");
+    var terms = document.getElementById("terms");
+    if (t1.style.display === "none") {
+        t1.style.display = "block";
+        t2.style.display = "none";
 
-        z.style.display = "block";
-        u.style.display = "none";
+        btn1.style.display = "block";
+        btn2.style.display = "none";
+
+
     } else {
-        x.style.display = "none";
-        y.style.display = "block";
+        t1.style.display = "none";
+        t2.style.display = "block";
         
-        u.style.display = "block";
-        z.style.display = "none";
+        btn2.style.display = "block";
+        btn1.style.display = "none";
+
+        terms.style.display = "none";
+
     }
 }
 
-function funcQuizResult() {
-    let i = 1;
-    let tot = 0;
-    while (i <11) {
-        let ques = "q" + i;
-        let ans = document.getElementById(ques);
-        if (ans.checked) {
-            tot += 2;
+function getRadioValue(radioArray,tot) {
+    let c = 0;
+    for (let i = 0; i < radioArray.length; i++) {
+        if (radioArray[i].checked) {
+            tot += Number(radioArray[i].value)
         } else {
-            tot -= 1;
+            c += 1;
         }
-        i += 1;
+        
     }
-    
+    if (c === 4) {
+        tot -= 1;
+    }
+    return(tot)
+}
+
+function funcQuizResult() {
+    let tot = 0;
+    for (let i = 1; i <= 10; i++) {
+        let q = "q" + i;
+        let radioArray = document.form[q];
+        tot = getRadioValue(radioArray, tot)
+    }
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     pop(tot,false);
     
 }
-
 
 function pop(tot,popup) {
     if(popup === false) {
@@ -101,3 +115,19 @@ function pop(tot,popup) {
         popup = false
     }
 }
+
+// THUMBNAILS
+
+function colorbg()
+{
+  var x=document.getElementById("selectid");
+  var bgcolor=x.options[x.selectedIndex].value;
+  document.iframe_a.document.body.style.backgroundColor=bgcolor;
+}
+function colortx()
+{
+  var x=document.getElementById("sid");
+  var txcolor=x.options[x.selectedIndex].value;
+  document.iframe_a.document.body.style.color = txcolor
+  // v.style.color=txcolor;
+} 
