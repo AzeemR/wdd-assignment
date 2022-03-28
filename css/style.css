@@ -236,8 +236,9 @@ img {vertical-align: middle;}
 /* FOOTER */
 .footer {
     width: 1200px;
-    background-color: #ffceb2;
+    background-color: #333;
     margin: auto;
+    color: #fff;
 }
 
 .line-1 {
@@ -254,7 +255,7 @@ img {vertical-align: middle;}
 }
 
 .line-2 > a {
-    color: #00f;
+    color: #fdff93;
     text-decoration: none;
 }
 
@@ -266,7 +267,7 @@ img {vertical-align: middle;}
 }
 
 .line-2 > a:visited {
-    color: #00f;
+    color: #fdff93;
 }
 
 .quiz-footer{
