@@ -45,8 +45,8 @@ button:active {
     justify-content: center;
     position: fixed;
     width: 1200px;
-    top: 0;
-    /*left: 83px; */
+    /* top: 0;
+    left: 83px; */
     z-index: 9999;
 }
 
@@ -71,7 +71,6 @@ button:active {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-
 }
 
 .nav a:hover {
