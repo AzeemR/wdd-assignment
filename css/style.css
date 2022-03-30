@@ -142,7 +142,7 @@ img {vertical-align: middle;}
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #e73725;
 }
 
 /* Fading animation */
