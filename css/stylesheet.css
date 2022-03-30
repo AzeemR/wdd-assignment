@@ -89,7 +89,7 @@ body{background-image:url("../img/fitness-workout-sportswear.jpg");
                                          }							
 
 /* Edit button */
-.inputButtons input[type="edit"]{width:100%;
+.inputButtons input[type="button"]{width:100%;
                                     background:#010000;
                                     color:#ffffff;
                                     border:10px;
@@ -100,7 +100,7 @@ body{background-image:url("../img/fitness-workout-sportswear.jpg");
 			 
 		  
 
-.inputButtons input[type="edit"]:hover{                           
+.inputButtons input[type="button"]:hover{                           
                                          background:#E73725;
                                          transition:0.5s;
                                          }																	 
