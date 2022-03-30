@@ -752,3 +752,92 @@ img {vertical-align: middle;}
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
+.std-body {
+    width: 1200px;
+    margin: auto;
+ }
+ .std-title {
+    text-align: center;
+    font-size: 200%;
+    /* margin-bottom: 20px; */
+ }
+
+ .std-des{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .std-pic img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    margin: 20px 100px;
+ }
+
+ .std-info {
+    width: 500px;
+    height: 300px;
+    margin: 20px 100px;
+    background-color: beige;
+    box-shadow: 0 0 10px black;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+
+ }
+ 
+ .std-info span{
+    font-weight: bold;
+    margin-right: 20px;
+ }
+
+ .tasks {
+    margin: auto;
+    margin-top: 30px;
+    width: 1200px;
+ }
+ 
+ .tasks h2{
+    text-align: center;
+    padding-top: 10px;
+ }
+
+ .task {
+    width: 480px;
+    height: 500px;
+    margin-top: 30px;
+
+ }
+ .std-tasks {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .task1 {
+    margin-left: 80px;
+    margin-right: 40px;
+ }
+
+ .task2 {
+    margin-left: 40px;
+    margin-right: 80px;
+ }
+
+ .task-topic {
+    height: 60px;
+    background: #444;
+    /* margin-top: 0; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+ }
+ .task-topic p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+ }
