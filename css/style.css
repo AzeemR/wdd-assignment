@@ -672,6 +672,7 @@ img {vertical-align: middle;}
     display: flex;
     flex-direction: row;
     margin: auto;
+    justify-content: space-around;
 }
 
 .devWrap {
