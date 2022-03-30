@@ -38,7 +38,7 @@ body{
     margin-left: 200px;
    
     /* Center and scale the image nicely */
-    background-position:relative;
+    /*background-position:relative;*/
     background-repeat: no-repeat;
     background-position-x: 5vw;
     background-position-y: 12vh;
