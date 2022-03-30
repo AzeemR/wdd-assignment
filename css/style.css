@@ -373,6 +373,14 @@ img {vertical-align: middle;}
     margin-bottom: 200px;
 }
 
+.quizTerms{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.quizTerms span{
+    font-weight: bold;
+}
 .quiz-footer{
     position: fixed;
     width: 1200px;
@@ -477,8 +485,7 @@ img {vertical-align: middle;}
 
 .personal {
     text-align: center;
-}
-
+}a
 .personal > form {
     margin: auto;
 }
