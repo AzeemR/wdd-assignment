@@ -5,32 +5,66 @@
    <meta charset = 'UTF-8'>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
-      .std-pic img{
-         width: 400px;
-         height: 400px;
-         
+      body {
+         width: 1200px;
+         margin: auto;
       }
+      .std-title {
+         text-align: center;
+         font-size: 200%;
+         /* margin-bottom: 20px; */
+      }
+
+      .std-des{
+         display: flex;
+         flex-direction: row;
+      }
+
+      .std-pic img{
+         width: 300px;
+         height: 300px;
+         border-radius: 50%;
+         box-shadow: 0 0 10px black;
+         margin: 20px 100px;
+      }
+
+      .std-info {
+         width: 400px;
+         height: 300px;
+         margin: 20px 100px;
+         box-shadow: 0 0 10px black;
+         padding-left: 100px;
+         /* padding-top: 50px; */
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+      
+      .std-info {
+         font-size: 25px;
+      }
+
    </style>
 </head>
 <body>
-   <div class="header">
+   <div class="std-title">
       <h1> Student 3</h1>
    </div>
 
-   <div>
+   <div class="std-des">
       <div class="std-pic">
          <img src="../img/student3.jpeg">
       </div>
     
-      <div id="std-info">
+      <div class="std-info">
          <p><span>Name:</span> Tuan Azeem Rashard</p> 
          <p><span>IIT number:</span> 20212116</p>
          <p><span>UoW ID:</span> w1871213</p> 
       </div>
    </div>
-      <div class="work">
+      <!-- <div class="work">
          <p>Tasks completed:&nbsp;Presentation Page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All products Page&nbsp;</p> 
-      </div>
+      </div> -->
 </body>
 </html>
  
