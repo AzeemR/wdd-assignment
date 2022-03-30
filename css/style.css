@@ -528,11 +528,13 @@ img {vertical-align: middle;}
     margin: auto;
     margin-top: 15px;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 #invoice {
     width: 1000px;
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 #invoice hr{
