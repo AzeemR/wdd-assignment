@@ -8,6 +8,7 @@
       body {
          width: 1200px;
          margin: auto;
+         background-color: #f2f2f2;
       }
       .std-title {
          text-align: center;
@@ -47,6 +48,50 @@
          margin-right: 20px;
       }
 
+      .tasks {
+         margin: auto;
+         margin-top: 30px;
+         width: 1200px;
+      }
+      
+      .tasks h2{
+         text-align: center;
+      }
+
+      .task {
+         width: 480px;
+         height: 500px;
+         margin-top: 30px;
+
+      }
+      .std-tasks {
+         display: flex;
+         flex-direction: row;
+      }
+
+      .task1 {
+         margin-left: 80px;
+         margin-right: 40px;
+      }
+
+      .task2 {
+         margin-left: 40px;
+         margin-right: 80px;
+      }
+
+      .task-topic {
+         height: 60px;
+         background: #333;
+         /* margin-top: 0; */
+         display: flex;
+         margin: auto;
+         justify-content: center;
+      }
+      .task-topic p{
+         font-size: 20px;
+         font-weight: bold;
+         color: #fff;
+      }
    </style>
 </head>
 <body>
@@ -65,9 +110,19 @@
          <p><span>UoW ID:</span> w1871213</p> 
       </div>
    </div>
-      <!-- <div class="work">
-         <p>Tasks completed:&nbsp;Presentation Page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All products Page&nbsp;</p> 
-      </div> -->
+   <div class="tasks">
+      <h2>Tasks Completed</h2>
+      <div class="std-tasks">
+         <div class="task task1">
+            <img src="../img/prev1.jpeg">
+            <div class="task-topic"><p>The Quiz</p></div>
+         </div>
+         <div class="task task2">
+            <img src="../img/prev2.jpeg">
+            <div class="task-topic"><p>About Us Page</p></div>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
  
