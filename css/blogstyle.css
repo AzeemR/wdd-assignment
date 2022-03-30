@@ -26,6 +26,7 @@ h2{background-color:#E1E1E1;
 .t1 {   
   float: left;
   width: 75%;
+ 
 }
 
 
@@ -40,6 +41,6 @@ h2{background-color:#E1E1E1;
 
 .des {
    background-color: white;
-   padding: 20px;
+   padding: 40px;
    margin-top: 20px;
 }
