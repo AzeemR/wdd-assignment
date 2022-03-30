@@ -769,7 +769,9 @@ img {vertical-align: middle;}
 .std-body {
     width: 1200px;
     margin: auto;
+    background-color: rgb(196, 253, 255);
  }
+
  .std-title {
     text-align: center;
     font-size: 200%;
@@ -785,7 +787,7 @@ img {vertical-align: middle;}
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px black;
     margin: 20px 100px;
  }
 
@@ -794,7 +796,7 @@ img {vertical-align: middle;}
     height: 300px;
     margin: 20px 100px;
     background-color: beige;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px black;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
