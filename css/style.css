@@ -5,6 +5,7 @@
     --outlineColour: #000;
 }
 
+/* GLOBAL Attributes */
 body {
     background-color: var(--mainColour);
 }
@@ -94,6 +95,7 @@ img {vertical-align: middle;}
     position:relative;
     top: 60px;
 }
+
 /* Slideshow container */
 .slideshow-container {
     width: 1200px;
