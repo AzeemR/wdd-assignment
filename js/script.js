@@ -68,7 +68,24 @@ function toggleDisplay() {
         terms.style.display = "none";
 
     }
+    startTimer(60);
 }
+
+function startTimer(time) {
+        counter = setInterval(timer, 1000);
+        function timer() {
+                document.getElementById("timer").textContent = time;
+            time--;
+            timeValue = time;
+            if (time <= 0) {
+                timeTaken = 60 - timeValue;
+               
+                clearInterval(counter);
+                //stopTimer(counter);
+                
+            }
+        }
+    }
 
 function getRadioValue(radioArray,tot) {
     let c = 0;
@@ -96,6 +113,10 @@ function funcQuizResult() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     pop(tot,false);
+
+    clearInterval(counter);
+    time = document.getElementById("timer").textContent;
+    document.getElementById("timer").textContent = time;
     
 }
 
