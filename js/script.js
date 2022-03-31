@@ -5,27 +5,27 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+  showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 
 // Go Up
@@ -45,7 +45,6 @@ function scrollFunction() {
 /////// Quiz //////
 
 function toggleDisplay() {
-
     var t1 = document.getElementById("title1");
     var t2 = document.getElementById("title2");
     var btn1 = document.getElementById("quizBtn1");
@@ -69,22 +68,25 @@ function toggleDisplay() {
         terms.style.display = "none";
 
     }
+    startTimer(60);
 }
 
 function startTimer(time) {
-    counter = setInterval(timer, 1000);
-    function timer() {
-        document.getElementById("timer").textContent = time;
-        time--;
-        timeValue = time;
-        if (time <= 0) {
-            timeTaken = 60 - timeValue;
-
-
-      }
-  }
-}
-
+        counter = setInterval(timer, 1000);
+        function timer() {
+                document.getElementById("timer").textContent = time;
+            time--;
+            timeValue = time;
+            if (time <= 0) {
+                timeTaken = 60 - timeValue;
+               
+                clearInterval(counter);
+                //stopTimer(counter);
+                
+            }
+        }
+    }
+    
 function getRadioValue(radioArray,tot) {
     let c = 0;
     for (let i = 0; i < radioArray.length; i++) {
@@ -112,6 +114,10 @@ function funcQuizResult() {
     document.documentElement.scrollTop = 0;
     pop(tot,false);
     
+    clearInterval(counter);
+    time = document.getElementById("timer").textContent;
+    document.getElementById("timer").textContent = time;
+    
 }
 
 function pop(tot,popup) {
@@ -133,15 +139,16 @@ function pop(tot,popup) {
 
 // THUMBNAILS
 
-function colorbg() {
-    var x=document.getElementById("selectid");
-    var bgcolor=x.options[x.selectedIndex].value;
-    document.iframe_a.document.body.style.backgroundColor=bgcolor;
+function colorbg()
+{
+  var x=document.getElementById("selectid");
+  var bgcolor=x.options[x.selectedIndex].value;
+  document.iframe_a.document.body.style.backgroundColor=bgcolor;
 }
-
-function colortx() {
-    var x=document.getElementById("sid");
-    var txcolor=x.options[x.selectedIndex].value;
-    document.iframe_a.document.body.style.color = txcolor
+function colortx()
+{
+  var x=document.getElementById("sid");
+  var txcolor=x.options[x.selectedIndex].value;
+  document.iframe_a.document.body.style.color = txcolor
   // v.style.color=txcolor;
 } 
