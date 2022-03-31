@@ -86,7 +86,7 @@ function startTimer(time) {
             }
         }
     }
-    
+
 function getRadioValue(radioArray,tot) {
     let c = 0;
     for (let i = 0; i < radioArray.length; i++) {
@@ -113,7 +113,7 @@ function funcQuizResult() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     pop(tot,false);
-    
+
     clearInterval(counter);
     time = document.getElementById("timer").textContent;
     document.getElementById("timer").textContent = time;
