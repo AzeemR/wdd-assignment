@@ -331,6 +331,11 @@ img {vertical-align: middle;}
     color: #fff;
 }
 
+.timer-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #box{
     width: 500px;
     overflow: hidden;
@@ -370,6 +375,18 @@ img {vertical-align: middle;}
 #title1 h1 {
     font-size: 300%;
     margin: 100px 0;
+}
+
+#title2 ol>li {
+    margin-bottom: 20px;
+}
+
+#title2 ul {
+    margin-top: 15px;
+}
+
+#title2 ul>li {
+    margin-bottom: 5px;
 }
 
 #quizBtn1 {
