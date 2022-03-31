@@ -63,11 +63,11 @@ body{background-image:url("../img/fitness-workout-sportswear.jpg");
 .summary {position:absolute;
 		max-width:400px;
 		background: #E1E1E1;
-		padding:100px;
+		padding:80px;
         border-radius:10px;
-		margin-bottom:-100px;
+		top:-220px;
 		left:100%;
-		bottom:25%;
+		width;100%;
 		font-size:15px;
 		  }
 		  
