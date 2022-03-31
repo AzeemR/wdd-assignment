@@ -372,6 +372,18 @@ img {vertical-align: middle;}
     margin: 100px 0;
 }
 
+#title2 ol>li {
+    margin-bottom: 20px;
+}
+
+#title2 ul {
+    margin-top: 15px;
+}
+
+#title2 ul>li {
+    margin-bottom: 5px;
+}
+
 #quizBtn1 {
     margin-bottom: 150px;
     box-shadow: 0 0 15px black;
