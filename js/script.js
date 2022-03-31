@@ -44,6 +44,7 @@ function scrollFunction() {
 
 /////// Quiz //////
 
+// Display toggle
 function toggleDisplay() {
     var t1 = document.getElementById("title1");
     var t2 = document.getElementById("title2");
@@ -71,6 +72,7 @@ function toggleDisplay() {
     startTimer(60);
 }
 
+// Timer
 function startTimer(time) {
         counter = setInterval(timer, 1000);
         function timer() {
@@ -87,6 +89,25 @@ function startTimer(time) {
         }
     }
 
+// Find result
+function funcQuizResult() {
+  let tot = 0;
+  for (let i = 1; i <= 10; i++) {
+      let q = "q" + i;
+      let radioArray = document.form[q];
+      tot = getRadioValue(radioArray, tot)
+  }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  msgbox(tot,false);
+
+  clearInterval(counter);
+  time = document.getElementById("timer").textContent;
+  document.getElementById("timer").textContent = time;
+  
+}
+
+// Get checked radio button value and calculate total
 function getRadioValue(radioArray,tot) {
     let c = 0;
     for (let i = 0; i < radioArray.length; i++) {
@@ -103,25 +124,9 @@ function getRadioValue(radioArray,tot) {
     return(tot)
 }
 
-function funcQuizResult() {
-    let tot = 0;
-    for (let i = 1; i <= 10; i++) {
-        let q = "q" + i;
-        let radioArray = document.form[q];
-        tot = getRadioValue(radioArray, tot)
-    }
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    pop(tot,false);
-
-    clearInterval(counter);
-    time = document.getElementById("timer").textContent;
-    document.getElementById("timer").textContent = time;
-    
-}
-
-function pop(tot,popup) {
-    if(popup === false) {
+// Message box
+function msgbox(tot,boxstate) {
+    if(boxstate === false) {
         document.getElementById("box").style.display = "block";
         if (tot > 5) {
             document.getElementById("box").style.backgroundColor = "#cdebd7"
@@ -129,16 +134,15 @@ function pop(tot,popup) {
         } else {
             document.getElementById("marks").innerHTML = "<h2>Oh No!</h2><p>You have received only " + tot + " marks for the quiz.";
         }
-        popup = true
+        boxstate = true
 
     } else {
         location.replace("../docs/home.html")
-        popup = false
+        boxstate = false
     }
 }
 
 // THUMBNAILS
-
 function colorbg()
 {
   var x=document.getElementById("selectid");
